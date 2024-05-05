@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background-image: url('../css/imagens/background-image.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul ul li {
+    display: block;
+    width: 200px;
+}
+
+nav ul ul li a {
+    padding: 8px 20px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+aside {
+    background-color: #f4f4f4;
+    width: 250px;
+    float: left;
+    height: 100%;
+}
+
+.systemLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+
+.formLogin{
+    background-color: #f0f0f0;
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.userLogin, .userPass, .btnLogin{
+    margin-bottom: 10px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"], button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.btnLog{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnLog:hover{
+    background-color: #00ff7f;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
