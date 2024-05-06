@@ -106,6 +106,109 @@ input[type="text"], input[type="password"], button {
     background-color: #00ff7f;
 }
 
+
+.CadProj {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+    justify-content: center;
+    align-items: center; 
+}
+
+.CadProj .titulo {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.CadProj label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.CadProj input[type="text"],
+.CadProj input[type="date"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.CadProj textarea {
+    width: calc(50% - 12px);
+    height: 250px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical;
+}
+
+.CadProj .descricao,
+.CadProj .datas,
+.CadProj .alunos,
+.CadProj .professor {
+    margin-top: 10px;
+}
+
+.CadProj .datas{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CadProj #datafim{
+    padding-left: 40px;
+}
+
+.CadProj .titulo2 label,
+.CadProj .titulo2 input[type="text"]{
+    width: calc(50% - 12px);
+}
+.CadProj .alunos label,
+.CadProj .alunos input[type="text"] {
+    width: calc(25% - 12px);
+}
+
+.CadProj .professor label,
+.CadProj .professor input[type="text"] {
+    width: calc(25% - 12px);
+}
+
+.CadProj .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.CadProj .btn button.editar {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.CadProj .btn button.excluir {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.CadProj .btn button.salvar {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.CadProj .btn button:hover {
+    opacity: 0.8;
+}
+
 footer {
     background-color: #333;
     color: #fff;
