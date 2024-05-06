@@ -139,7 +139,7 @@ input[type="text"], input[type="password"], button {
 }
 
 .CadProj textarea {
-    width: calc(50% - 12px);
+    width: 99%;
     height: 250px;
     padding: 8px;
     margin-bottom: 10px;
@@ -167,16 +167,16 @@ input[type="text"], input[type="password"], button {
 
 .CadProj .titulo2 label,
 .CadProj .titulo2 input[type="text"]{
-    width: calc(50% - 12px);
+    width: 100%;
 }
 .CadProj .alunos label,
 .CadProj .alunos input[type="text"] {
-    width: calc(25% - 12px);
+    width: 100%;
 }
 
 .CadProj .professor label,
 .CadProj .professor input[type="text"] {
-    width: calc(25% - 12px);
+    width: 100%;
 }
 
 .CadProj .btn {
@@ -190,12 +190,8 @@ input[type="text"], input[type="password"], button {
 
 }
 
-.CadProj .btn button.editar {
-    background-color: #007bff;
-    color: #fff;
-}
 
-.CadProj .btn button.excluir {
+.CadProj .btn button.cancelar {
     background-color: #dc3545;
     color: #fff;
 }
@@ -213,6 +209,6 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
     margin-top: auto;
 }
