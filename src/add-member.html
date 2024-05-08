@@ -57,7 +57,27 @@
     </header>
     <main class="CadProj">
         <h1 class="CadProj titulo">Adicionar Membros</h1>
-
+        <form action="">  
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+            <label for="permissao">Permissões</label>
+            <div>
+                <select name="permissoes" id="permissoes">
+                    <option value="admin">Professor</option>
+                    <option value="usuario">Aluno</option>
+                </select>
+            </div>
+            <div class="btn">
+                <button class="btn cancelar">Cancelar</button>
+                <button class="btn salvar" type="submit">Salvar</button>
+            </div>
+        </form>
     </main>
     <footer>
         InnovaTech Solutions @2024
