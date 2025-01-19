@@ -1,29 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProAcademic Hub</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/Login.css">
+    <script src="https://kit.fontawesome.com/d7734ef980.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <main >
-        <div class="systemLogin">
-            <!-- adicionar method posteriormente -->
-            <form class="formLogin" action="system.html">
-                <div class="userLogin">
-                    <label for="user">Usuário:</label>
-                    <input type="text" name="user" id="user" required>
+    <div class="container">
+        <aside class="image-section">
+
+        </aside>
+
+        <main class="form-section login">
+            <h2>Entrar</h2>
+            <p>Se você não tem uma conta <a class="logcad" href="cadastro.html">Cadastre-se aqui</a></p>
+
+
+            <form action="processa_login.php" method="POST">
+                <div class="dadoslogin">
+                    <label for="email">E-mail</label>
+                    <div>
+                        <i class="fa-regular fa-envelope icon-modify"></i>
+                        <input type="email" id="email" name="email" placeholder="Insira seu email" required>
+                    </div>
+
+
+                    <label for="senha">Senha</label>
+                    <div>
+                        <i class="fa-solid fa-lock icon-modify"></i>
+                        <input type="password" id="passwordL" name="password" placeholder="Insira sua senha" required>
+
+                        <i class="fa-solid fa-eye" id="mostrarSenha"></i>
+
+                    </div>
+                    <script>
+
+                        document.getElementById("mostrarSenha").addEventListener("click", function () {
+                            let senhaInput = document.getElementById("passwordL");
+                            this.classList.toggle("fa-eye-slash"); // Alterna entre olho aberto/fechado
+
+                            if (senhaInput.type === "password") {
+                                senhaInput.type = "text";
+                            } else {
+                                senhaInput.type = "password";
+                            }
+                        });                  
+                    </script>
                 </div>
-                <div class="userPass">
-                    <label for="userPw">Senha:</label>
-                    <input type="password" name="userPw" id="userPw" required>
+
+                <div class="lembrar-esqueci">
+                    <label for="ck">
+                        <input type="checkbox" id="ck" name="ck">
+                        Lembrar senha
+                    </label>
+                    <a href="esqueci.html">Esqueci minha senha</a>
                 </div>
-                <div class="btnLogin">
-                    <button class="btnLog" type="submit">Entrar</button>
-                </div>
+
+                <button type="submit">Login</button>
             </form>
-        </div>
-    </main>
+
+            <section class="social-icons">
+                <div class="social-media">
+                    <p class="conect">Ou conecte-se com:</p>
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media google">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media linkedin">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
+
 </html>
